@@ -2,5 +2,75 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  list-style: none;
 }
 
+header {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../images/bg-intro-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 70% auto;
+    nav {
+      position: fixed;
+      top:0;
+      width: 100%;
+      margin-top: 20px;
+
+      ul {
+        display: flex;
+        justify-content: flex-end;
+        li {
+          padding: 10px 25px;
+          margin: 10px;
+          color: white;
+          font-size: 14px;
+        }
+      }
+
+    }
+  main {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0 0 40px 0;
+    width: 80%;
+    text-align: center;
+    section{
+      img {
+        display: block;
+        width: 90%;
+      }
+      h1 {
+        font-size: 26px;
+        font-family: 'Raleway', sans-serif;
+      }
+      h2 {
+        font-weight: 400;
+        font-size: 20px;
+      }
+      button {
+        color: white;
+        font-size: 22px;
+        border: none;
+        padding: 10px 40px;
+        font-weight: 600;
+
+      }
+    }
+
+  }
+}
+
+.greenBtn {
+  background-color: hsl(163, 95%, 43%);
+  border-radius: 7%;
+}
+
+section>* {
+  margin: 12px 0;
+}
