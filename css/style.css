@@ -14,19 +14,32 @@ header {
   background-position: top right;
   background-size: 70% auto; }
   header nav {
-    position: fixed;
+    position: absolute;
     top: 0;
     width: 100%;
-    margin-top: 20px; }
+    margin-top: 20px;
+    padding-right: 10px; }
     header nav ul {
       display: flex;
-      justify-content: flex-end; }
+      justify-content: flex-end;
+      padding: 15px; }
       header nav ul li {
         padding: 10px 25px;
-        margin: 10px;
+        margin-left: 4px;
         color: white;
         font-size: 14px; }
-  header main {
+  header img.logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25%;
+    margin: 40px 25px; }
+  header main img {
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    padding-top: 37%; }
+  header main section {
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -34,25 +47,90 @@ header {
     margin: 0 0 40px 0;
     width: 80%;
     text-align: center; }
-    header main section img {
-      display: block;
-      width: 90%; }
     header main section h1 {
-      font-size: 26px;
+      font-size: 28px;
       font-family: 'Raleway', sans-serif; }
     header main section h2 {
       font-weight: 400;
-      font-size: 20px; }
+      font-size: 18px; }
     header main section button {
       color: white;
       font-size: 22px;
       border: none;
       padding: 10px 40px;
-      font-weight: 600; }
+      font-weight: 600;
+      box-shadow: 0 4px 8px 0 #ddd; }
 
 .greenBtn {
   background-color: #05d69b;
-  border-radius: 7%; }
+  border-radius: 6%; }
 
 section > * {
   margin: 12px 0; }
+
+@media (min-width: 600px) {
+  header {
+    background-image: url("../images/bg-intro-desktop.svg");
+    background-size: 50% auto; }
+    header nav {
+      margin-top: 40px;
+      padding-right: 30px; }
+      header nav ul li {
+        padding: 5px 25px; }
+    header img.logo {
+      width: 12%; }
+    header main img {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 30%;
+      padding-bottom: 33vh;
+      margin-right: 60px; }
+    header main section {
+      left: 0;
+      transform: translate(0, -50%);
+      width: 40%;
+      text-align: left;
+      margin-left: 25px; }
+      header main section h1 {
+        font-size: 30px; }
+      header main section h2 {
+        font-size: 16px; }
+      header main section button {
+        font-size: 18px;
+        padding: 15px 70px;
+        font-weight: 800; }
+  .greenBtn:hover {
+    cursor: pointer; } }
+
+section.s1 {
+  width: 90%;
+  margin: 200px auto;
+  text-align: center; }
+  section.s1 h1 {
+    font-size: 20px;
+    width: 70%;
+    margin: 0 auto; }
+  section.s1 p {
+    font-size: 16px; }
+  section.s1 .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    section.s1 .wrapper .elems {
+      width: 50%; }
+      section.s1 .wrapper .elems img {
+        margin-top: 100px; }
+      section.s1 .wrapper .elems p {
+        margin-top: 20px; }
+
+@media (min-width: 600px) {
+  section.s1 h1 {
+    margin-bottom: 20px; }
+  section.s1 p {
+    width: 50%;
+    margin: 0 auto; }
+  section.s1 .wrapper {
+    flex-direction: row; }
+    section.s1 .wrapper p {
+      font-size: 14px; } }
