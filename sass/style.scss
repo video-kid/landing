@@ -1,28 +1,22 @@
+@import 'vendor/_normalize';
+@import 'core/_colors';
+@import 'core/_var';
+@import 'core/_typography';
 @import 'layout/_header';
+@import 'module/_navigation';
 @import 'layout/_section1';
 @import 'layout/_section2';
 @import 'layout/_section3';
 @import 'layout/_footer';
-
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: 'Open Sans', sans-serif;
-  list-style: none;
-}
 
 section {
   padding-top: 200px;
 }
 
 h1, h2 {
-  color: hsl(0, 0%, 17%)
+  color: $dark-gray;
 }
 
 p {
-  color: hsl(0, 0%, 50%)
+  color: $gray;
 }
-
-

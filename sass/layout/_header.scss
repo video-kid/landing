@@ -6,26 +6,7 @@ header {
   background-repeat: no-repeat;
   background-position: top right;
   background-size: 70% auto;
-  nav {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    margin-top: 20px;
-    padding-right: 10px;
 
-    ul {
-      display: flex;
-      justify-content: flex-end;
-      padding: 15px;
-      li {
-        padding: 10px 25px;
-        margin-left: 4px;
-        color: white;
-        font-size: 14px;
-      }
-    }
-
-  }
   img.logo {
     position: absolute;
     top: 0;
@@ -86,15 +67,7 @@ header {
   header {
     background-image: url("../images/bg-intro-desktop.svg");
     background-size: 50% auto;
-    nav {
-      margin-top: 40px;
-      padding-right: 30px;
-      ul {
-        li {
-          padding: 5px 25px;
-        }
-      }
-    }
+
     img.logo {
       width: 12%;
     }
