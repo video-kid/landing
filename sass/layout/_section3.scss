@@ -1,0 +1,27 @@
+
+// section 3:
+
+section.s3 {
+  text-align: center;
+  button {
+    color: white;
+    font-size: 22px;
+    border: none;
+    padding: 10px 40px;
+    font-weight: 600;
+    box-shadow: 0 4px 8px 0 #ddd;
+  }
+}
+
+//section3 desktop:
+@media (min-width: 900px) {
+  section.s3 {
+    h1{}
+    p {
+      margin: 0 auto;
+      width: 60%;
+      padding: 10px;
+    }
+    button{}
+  }
+}
