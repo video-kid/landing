@@ -43,41 +43,41 @@ header {
     left: 0;
     width: 25%;
     margin: 40px 25px; }
-  header main img {
-    display: block;
-    margin: 0 auto;
-    width: 70%;
-    padding-top: 37%; }
-  header main section {
+  header main {
+    width: 100%;
     position: absolute;
     bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    margin: 0 0 40px 0;
-    width: 80%;
-    text-align: center;
-    padding-top: 0; }
-    header main section h1 {
-      font-size: 28px;
-      font-family: 'Raleway', sans-serif; }
-    header main section h2 {
-      font-weight: 400;
-      font-size: 18px;
-      color: gray; }
-    header main section button {
-      color: white;
-      font-size: 22px;
-      border: none;
-      padding: 10px 40px;
-      font-weight: 600;
-      box-shadow: 0 4px 8px 0 #ddd; }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px; }
+    header main img {
+      width: 70%; }
+    header main section {
+      margin: 0 0 40px 0;
+      width: 80%;
+      text-align: center;
+      padding-top: 0; }
+      header main section h1 {
+        font-size: 28px;
+        font-family: 'Raleway', sans-serif; }
+      header main section h2 {
+        font-weight: 400;
+        font-size: 18px;
+        color: gray;
+        padding: 14px 0; }
+      header main section button {
+        color: white;
+        font-size: 22px;
+        border: none;
+        padding: 10px 40px;
+        font-weight: 600;
+        box-shadow: 0 4px 8px 0 #ddd; }
 
 .greenBtn {
   background-color: #05d69b;
-  border-radius: 6%; }
-
-section > * {
-  margin: 12px 0; }
+  border-radius: 6%;
+  cursor: pointer; }
 
 @media (min-width: 900px) {
   header {
@@ -90,27 +90,28 @@ section > * {
         padding: 5px 25px; }
     header img.logo {
       width: 12%; }
-    header main img {
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      width: 30%;
-      padding-bottom: 33vh;
-      margin-right: 60px; }
-    header main section {
-      left: 0;
-      transform: translate(0, -50%);
-      width: 40%;
-      text-align: left;
-      margin-left: 25px; }
-      header main section h1 {
-        font-size: 30px; }
-      header main section h2 {
-        font-size: 16px; }
-      header main section button {
-        font-size: 18px;
-        padding: 15px 70px;
-        font-weight: 800; }
+    header main {
+      height: 100%;
+      flex-direction: row-reverse;
+      justify-content: space-between; }
+      header main img {
+        width: 35%;
+        bottom: 50%;
+        transform: translateY(-28%);
+        padding-right: 10%; }
+      header main section {
+        flex-basis: 45%;
+        text-align: left;
+        margin-left: 25px; }
+        header main section h1 {
+          font-size: 50px; }
+        header main section h2 {
+          padding: 20px 0;
+          font-size: 18px; }
+        header main section button {
+          font-size: 18px;
+          padding: 15px 70px;
+          font-weight: 800; }
   .greenBtn:hover {
     cursor: pointer; } }
 
@@ -208,7 +209,7 @@ section.s2 {
           height: 70px;
           padding: 20px; }
         section.s2 .wrapper .elems p {
-          padding: 5px; } }
+          padding: 10px; } }
 
 section.s3 {
   text-align: center; }
@@ -221,6 +222,7 @@ section.s3 {
     box-shadow: 0 4px 8px 0 #ddd; }
 
 @media (min-width: 900px) {
-  p {
+  section.s3 p {
     margin: 0 auto;
-    width: 60%; } }
+    width: 60%;
+    padding: 10px; } }
