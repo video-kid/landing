@@ -604,79 +604,73 @@ section.s3 {
     width: 60%;
     padding: 10px; } }
 
-.footer--darkblue {
+.footer {
   background-color: #070439;
-  color: #FAFAFA; }
-
-.footer__wrapper {
+  color: #FAFAFA;
   display: flex;
   flex-direction: column;
-  padding: 70px 20px;
+  padding: 70px 0px;
   width: 100%; }
-  .footer__wrapper .fylo-logo {
+  .footer .fylo-logo {
     width: 50%; }
-  .footer__wrapper .footer__list {
+  .footer__element {
     padding: 20px; }
-    .footer__wrapper .footer__list h2 {
-      color: #FAFAFA;
-      padding: 15px; }
-    .footer__wrapper .footer__list .list__item {
-      padding: 10px; }
-  .footer__wrapper .contact {
-    display: flex;
-    flex-direction: column; }
-    .footer__wrapper .contact__wrapper span {
-      padding: 10px 0;
-      display: block; }
-      .footer__wrapper .contact__wrapper span img {
-        display: inline;
-        padding-right: 10px; }
-      .footer__wrapper .contact__wrapper span p {
-        display: inline; }
-    .footer__wrapper .contact p {
-      margin: 20px 0;
-      color: #FAFAFA; }
-    .footer__wrapper .contact form {
+    .footer__element--contact {
       display: flex;
-      flex-direction: column;
-      align-items: flex-end; }
-      .footer__wrapper .contact form .textarea {
-        display: block;
-        flex-basis: 100%; }
-        .footer__wrapper .contact form .textarea--style {
+      flex-direction: column; }
+      .footer__element--contact .contact__data span {
+        padding: 10px 0;
+        display: block; }
+        .footer__element--contact .contact__data span img {
+          display: inline;
+          padding-right: 10px; }
+        .footer__element--contact .contact__data span p {
+          display: inline; }
+      .footer__element--contact p {
+        margin: 20px 0;
+        color: #FAFAFA; }
+      .footer__element--contact form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end; }
+        .footer__element--contact form .textarea {
+          display: block;
+          flex-basis: 100%;
           width: 100%;
           border-radius: 5px;
           height: 35px; }
-      .footer__wrapper .contact form .submit__button {
-        padding: 8px 20%;
-        margin: 20px 0; }
-      .footer__wrapper .contact form .submit--green {
-        background-color: #05D69B;
-        border-radius: 5px;
-        cursor: pointer; }
+        .footer__element--contact form .submit {
+          padding: 8px 20%;
+          margin: 20px 0;
+          background-color: #05D69B;
+          border-radius: 5px;
+          cursor: pointer; }
+    .footer__element h2 {
+      color: #FAFAFA;
+      padding: 15px; }
+    .footer__element .list__item {
+      padding: 10px; }
 
 @media (min-width: 900px) {
-  .footer__wrapper {
+  .footer {
     flex-direction: row;
     align-items: baseline;
     justify-content: space-evenly; }
-    .footer__wrapper .fylo-logo {
+    .footer .fylo-logo {
       width: 45%; }
-    .footer__wrapper .footer__list {
+    .footer__element {
       padding: 40px inherit; }
-    .footer__wrapper .contact {
-      flex-basis: 35%; }
-      .footer__wrapper .contact__wrapper span {
-        padding: 5px 0; }
-      .footer__wrapper .contact form {
-        margin-bottom: 10px;
-        flex-direction: row; }
-        .footer__wrapper .contact form .textarea {
-          flex-basis: 80%; }
-          .footer__wrapper .contact form .textarea--style {
+      .footer__element--contact {
+        flex-basis: 35%; }
+        .footer__element--contact .contact_data span {
+          padding: 5px 0; }
+        .footer__element--contact form {
+          margin-bottom: 10px;
+          flex-direction: row; }
+          .footer__element--contact form .textarea {
+            flex-basis: 80%;
             width: 100%;
             margin-right: 10px; }
-        .footer__wrapper .contact form .submit {
-          margin: 0; }
-          .footer__wrapper .contact form .submit__button {
+          .footer__element--contact form .submit {
+            margin: 0;
             padding: 8px 8%; } }

@@ -1,30 +1,21 @@
 .footer {
-  &--darkblue {
-    background-color: $dark-blue;
-    color: $light-gray;
+  background-color: $dark-blue;
+  color: $light-gray;
+  display: flex;
+  flex-direction: column;
+  padding: 70px 0px;
+  width: 100%;
+  .fylo-logo {
+    width: 50%;
   }
-  &__wrapper {
-    display: flex;
-    flex-direction: column;
-    padding: 70px 20px;
-    width: 100%;
-    .fylo-logo {
-      width: 50%;
-    }
-    .footer__list {
-      padding: 20px;
-      h2 {
-        color: $light-gray;
-        padding: 15px;
-      }
-      .list__item {
-        padding: 10px;
-      }
-    }
-    .contact {
+
+  &__element {
+    padding: 20px;
+
+    &--contact {
       display: flex;
       flex-direction: column;
-      &__wrapper {
+      .contact__data {
         span {
           padding: 10px 0;
           display: block;
@@ -48,67 +39,70 @@
         .textarea {
           display: block;
           flex-basis: 100%;
-          &--style {
-            width: 100%;
-            border-radius: $radius5;
-            height: 35px;
-          }
+          width: 100%;
+          border-radius: $radius5;
+          height: 35px;
 
         }
         .submit {
-          &__button {
-            padding: 8px 20%;
-            margin: 20px 0;
-          }
-          &--green {
-            background-color: $teal;
-            border-radius: $radius5;
-            cursor: pointer;
-          }
+          padding: 8px 20%;
+          margin: 20px 0;
+          background-color: $teal;
+          border-radius: $radius5;
+          cursor: pointer;
+
         }
       }
     }
+
+    h2 {
+      color: $light-gray;
+      padding: 15px;
+    }
+    .list {
+      &__item {
+        padding: 10px;
+      }
+    }
+
   }
 }
 
 @media (min-width: 900px) {
-  .footer{
-    &__wrapper{
-      flex-direction: row;
-      align-items: baseline;
-      justify-content: space-evenly;
-      .fylo-logo{
-        width: 45%;
-      }
-      .footer__list {
-        padding: 40px inherit;
-      }
-      .contact {
+  .footer {
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-evenly;
+    .fylo-logo {
+      width: 45%;
+    }
+    &__element {
+      padding: 40px inherit;
+      &--contact {
         flex-basis: 35%;
-        &__wrapper{
-          span{
+        .contact_data {
+          span {
             padding: 5px 0;
           }
         }
-        p{}
-        form{
+        p {
+        }
+        form {
           margin-bottom: 10px;
           flex-direction: row;
-          .textarea{
+          .textarea {
             flex-basis: 80%;
-            &--style{
-              width: 100%;
-              margin-right: 10px;
-            }
+            width: 100%;
+            margin-right: 10px;
+
           }
-          .submit{
+          .submit {
             margin: 0;
-            &__button{
-              padding: 8px 8%;
-            }
+            padding: 8px 8%;
           }
         }
       }
     }
+
   }
 }
