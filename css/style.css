@@ -522,22 +522,22 @@ nav {
     .details .wrapper .card__description {
       font-size: 14px; } }
 
-section.s2 {
+.integrations {
   text-align: center;
   width: 90%;
   margin: 0 auto;
   display: flex;
   flex-direction: column; }
-  section.s2 span h1 {
+  .integrations__header__slogan {
     font-size: 18px;
     padding-bottom: 40px; }
-  section.s2 span p {
+  .integrations__header__description {
     font-size: 16px; }
-  section.s2 .wrapper {
+  .integrations .wrapper {
     display: flex;
     flex-direction: column;
     align-items: center; }
-    section.s2 .wrapper .elems {
+    .integrations .wrapper .elems {
       border-radius: 5px;
       box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
       width: 60%;
@@ -545,44 +545,44 @@ section.s2 {
       display: flex;
       flex-direction: column;
       align-items: center; }
-      section.s2 .wrapper .elems img {
+      .integrations .wrapper .elems img {
         height: 100px;
         padding: 30px; }
-      section.s2 .wrapper .elems h2 {
+      .integrations .wrapper .elems h2 {
         width: 100%;
         display: block;
         font-size: 18px;
         padding: 10px;
         border-top: 2px solid rgba(0, 0, 0, 0.1);
         font-family: 'Raleway', sans-serif; }
-      section.s2 .wrapper .elems p {
+      .integrations .wrapper .elems p {
         padding: 5px;
         padding-bottom: 10px;
         font-size: 14px; }
 
 @media (min-width: 900px) {
-  section.s2 {
+  .integrations {
     flex-direction: row;
     align-items: center; }
-    section.s2 span {
+    .integrations__header {
       width: 30%;
       flex-grow: 1;
       text-align: left; }
-      section.s2 span p {
+      .integrations__header__description {
         font-size: 10px; }
-    section.s2 .wrapper {
+    .integrations .wrapper {
       flex-grow: 3;
       flex-direction: row;
       flex-wrap: wrap;
       width: 400px; }
-      section.s2 .wrapper .elems {
+      .integrations .wrapper .elems {
         justify-content: space-evenly;
         width: 26%;
         margin: 5px; }
-        section.s2 .wrapper .elems img {
+        .integrations .wrapper .elems img {
           height: 70px;
           padding: 20px; }
-        section.s2 .wrapper .elems p {
+        .integrations .wrapper .elems p {
           padding: 10px; } }
 
 .join {

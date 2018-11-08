@@ -1,16 +1,16 @@
 // section 2:
-section.s2 {
+.integrations {
   text-align: center;
   width: 90%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  span {
-    h1 {
+  &__header {
+    &__slogan {
       font-size: 18px;
       padding-bottom: 40px;
     }
-    p {
+    &__description {
       font-size: 16px;
     }
   }
@@ -51,14 +51,14 @@ section.s2 {
 //section 2 desktop:
 
 @media (min-width: 900px) {
-  section.s2 {
+  .integrations {
     flex-direction: row;
     align-items: center;
-    span {
+    &__header {
       width: 30%;
       flex-grow: 1;
       text-align: left;
-      p {
+      &__description {
         font-size: 10px;
       }
     }
