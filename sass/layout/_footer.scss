@@ -30,6 +30,7 @@
           display: block;
           img {
             display: inline;
+            padding-right: 10px;
           }
           p {
             display: inline
@@ -46,6 +47,7 @@
         align-items: flex-end;
         .textarea {
           display: block;
+          flex-basis: 100%;
           &--style {
             width: 100%;
             border-radius: $radius5;
@@ -55,13 +57,55 @@
         }
         .submit {
           &__button {
-            padding: 8px 60px;
+            padding: 8px 20%;
             margin: 20px 0;
           }
           &--green {
             background-color: $teal;
             border-radius: $radius5;
             cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  .footer{
+    &__wrapper{
+      flex-direction: row;
+      align-items: baseline;
+      justify-content: space-evenly;
+      .fylo-logo{
+        width: 45%;
+      }
+      .footer__list {
+        padding: 40px inherit;
+      }
+      .contact {
+        flex-basis: 35%;
+        &__wrapper{
+          span{
+            padding: 5px 0;
+          }
+        }
+        p{}
+        form{
+          margin-bottom: 10px;
+          flex-direction: row;
+          .textarea{
+            flex-basis: 80%;
+            &--style{
+              width: 100%;
+              margin-right: 10px;
+            }
+          }
+          .submit{
+            margin: 0;
+            &__button{
+              padding: 8px 8%;
+            }
           }
         }
       }

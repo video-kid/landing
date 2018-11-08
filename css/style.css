@@ -629,7 +629,8 @@ section.s3 {
       padding: 10px 0;
       display: block; }
       .footer__wrapper .contact__wrapper span img {
-        display: inline; }
+        display: inline;
+        padding-right: 10px; }
       .footer__wrapper .contact__wrapper span p {
         display: inline; }
     .footer__wrapper .contact p {
@@ -640,15 +641,42 @@ section.s3 {
       flex-direction: column;
       align-items: flex-end; }
       .footer__wrapper .contact form .textarea {
-        display: block; }
+        display: block;
+        flex-basis: 100%; }
         .footer__wrapper .contact form .textarea--style {
           width: 100%;
           border-radius: 5px;
           height: 35px; }
       .footer__wrapper .contact form .submit__button {
-        padding: 8px 60px;
+        padding: 8px 20%;
         margin: 20px 0; }
       .footer__wrapper .contact form .submit--green {
         background-color: #05D69B;
         border-radius: 5px;
         cursor: pointer; }
+
+@media (min-width: 900px) {
+  .footer__wrapper {
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-evenly; }
+    .footer__wrapper .fylo-logo {
+      width: 45%; }
+    .footer__wrapper .footer__list {
+      padding: 40px inherit; }
+    .footer__wrapper .contact {
+      flex-basis: 35%; }
+      .footer__wrapper .contact__wrapper span {
+        padding: 5px 0; }
+      .footer__wrapper .contact form {
+        margin-bottom: 10px;
+        flex-direction: row; }
+        .footer__wrapper .contact form .textarea {
+          flex-basis: 80%; }
+          .footer__wrapper .contact form .textarea--style {
+            width: 100%;
+            margin-right: 10px; }
+        .footer__wrapper .contact form .submit {
+          margin: 0; }
+          .footer__wrapper .contact form .submit__button {
+            padding: 8px 8%; } }
