@@ -618,13 +618,13 @@ section.s3 {
     .footer__element--contact {
       display: flex;
       flex-direction: column; }
-      .footer__element--contact .contact__data span {
+      .footer__element--contact span {
         padding: 10px 0;
         display: block; }
-        .footer__element--contact .contact__data span img {
+        .footer__element--contact span img {
           display: inline;
           padding-right: 10px; }
-        .footer__element--contact .contact__data span p {
+        .footer__element--contact span p {
           display: inline; }
       .footer__element--contact p {
         margin: 20px 0;
@@ -662,7 +662,7 @@ section.s3 {
       padding: 40px inherit; }
       .footer__element--contact {
         flex-basis: 35%; }
-        .footer__element--contact .contact_data span {
+        .footer__element--contact span {
           padding: 5px 0; }
         .footer__element--contact form {
           margin-bottom: 10px;

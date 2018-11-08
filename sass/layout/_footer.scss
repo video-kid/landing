@@ -15,7 +15,6 @@
     &--contact {
       display: flex;
       flex-direction: column;
-      .contact__data {
         span {
           padding: 10px 0;
           display: block;
@@ -27,7 +26,7 @@
             display: inline
           }
         }
-      }
+
       p {
         margin: 20px 0;
         color: $light-gray;
@@ -80,11 +79,10 @@
       padding: 40px inherit;
       &--contact {
         flex-basis: 35%;
-        .contact_data {
           span {
             padding: 5px 0;
           }
-        }
+
         p {
         }
         form {
