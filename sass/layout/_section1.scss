@@ -1,48 +1,48 @@
 
-section.s1 {
+.details {
   width: 90%;
   margin: 0 auto;
   text-align: center;
-  h1 {
-    font-size: 20px;
+  &__slogan {
     width: 70%;
     font-family: 'Raleway', sans-serif;
     margin: 0 auto 40px auto;
   }
-  p {
-    font-size: 16px;
+  &__description {
   }
   .wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
-    .elems {
+    .card {
       width: 50%;
-      img {
+      &__image {
         margin-top: 100px;
       }
-      p {
+      &__description {
         margin-top: 20px;
       }
     }
   }
 }
 
-//section 1 desktop:
 @media (min-width: 900px) {
-  section.s1 {
-    h1 {
+  .details {
+    &__slogan {
       margin-bottom: 20px;
     }
-    p {
+    &__description {
       width: 50%;
       margin: 0 auto;
     }
     .wrapper {
       flex-direction: row;
-      p {
-        font-size: 14px;
+      .card{
+        &__description {
+          font-size: 14px;
+        }
       }
+
     }
   }
 }
