@@ -1,15 +1,14 @@
 
-// section 3:
-
-section.s3 {
+.join {
+  margin: 0 10px;
   text-align: center;
   margin-bottom: 100px;
-  button {
+  &__button {
     color: white;
-    font-size: 22px;
+    font-size: 18px;
     border: none;
     margin: 50px;
-    padding: 10px 40px;
+    padding: 20px 60px;
     font-weight: 600;
     box-shadow: 0 4px 8px 0 #ddd;
   }
@@ -17,13 +16,13 @@ section.s3 {
 
 //section3 desktop:
 @media (min-width: 900px) {
-  section.s3 {
-    h1{}
-    p {
+  .join {
+    &__slogan{}
+    &__details {
       margin: 0 auto;
-      width: 60%;
+      width: 40%;
       padding: 10px;
     }
-    button{}
+    &__button{}
   }
 }
