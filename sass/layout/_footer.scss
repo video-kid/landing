@@ -1,4 +1,70 @@
-footer {
-  background-color: $dark-blue;
-  color: $light-gray;
+.footer {
+  &--darkblue {
+    background-color: $dark-blue;
+    color: $light-gray;
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 70px 20px;
+    width: 100%;
+    .fylo-logo {
+      width: 50%;
+    }
+    .footer__list {
+      padding: 20px;
+      h2 {
+        color: $light-gray;
+        padding: 15px;
+      }
+      .list__item {
+        padding: 10px;
+      }
+    }
+    .contact {
+      display: flex;
+      flex-direction: column;
+      &__wrapper {
+        span {
+          padding: 10px 0;
+          display: block;
+          img {
+            display: inline;
+          }
+          p {
+            display: inline
+          }
+        }
+      }
+      p {
+        margin: 20px 0;
+        color: $light-gray;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        .textarea {
+          display: block;
+          &--style {
+            width: 100%;
+            border-radius: $radius5;
+            height: 35px;
+          }
+
+        }
+        .submit {
+          &__button {
+            padding: 8px 60px;
+            margin: 20px 0;
+          }
+          &--green {
+            background-color: $teal;
+            border-radius: $radius5;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
 }

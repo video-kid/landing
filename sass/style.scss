@@ -2,6 +2,7 @@
 @import 'core/_colors';
 @import 'core/_var';
 @import 'core/_typography';
+@import 'core/_globals';
 @import 'layout/_header';
 @import 'module/_navigation';
 @import 'layout/_section1';
@@ -9,14 +10,4 @@
 @import 'layout/_section3';
 @import 'layout/_footer';
 
-section {
-  padding-top: 200px;
-}
 
-h1, h2 {
-  color: $dark-gray;
-}
-
-p {
-  color: $gray;
-}

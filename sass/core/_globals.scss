@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  padding-top: 200px;
+}
+
+h1, h2 {
+  color: $dark-gray;
+  font-family: $raleway;
+}
+
+p {
+  color: $gray;
+  font-family: $open-sans;
+}
+
+
+.greenBtn {
+  background-color: hsl(163, 95%, 43%);
+  border-radius: 6%;
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
