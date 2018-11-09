@@ -1,1 +1,7 @@
-@
+@mixin green-button {
+  background-color: $teal;
+}
+
+@mixin button-radius {
+  border-radius: 6px;
+}

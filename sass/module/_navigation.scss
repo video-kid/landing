@@ -5,27 +5,31 @@ nav {
   margin-top: 20px;
   padding-right: 10px;
 
-  ul {
+  .menu {
     display: flex;
     justify-content: flex-end;
     padding: 15px;
-    li {
+     &__item{
       padding: 10px 25px;
       margin-left: 4px;
       color: white;
       font-size: 14px;
-
+       &--green{
+         @include green-button;
+       }
+       &--radius{
+         @include button-radius;
+       }
     }
   }
-
 }
 
 @media (min-width: 900px) {
   nav {
     margin-top: 40px;
     padding-right: 30px;
-    ul {
-      li {
+    .menu {
+      &__item {
         padding: 5px 25px;
       }
     }

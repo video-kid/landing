@@ -386,13 +386,17 @@ p {
   font-family: "Open Sans", sans-serif;
   font-size: 16px; }
 
-.greenBtn {
-  background-color: #05d69b;
-  border-radius: 6%;
+button {
+  border-radius: 6px;
+  background-color: #05D69B;
   cursor: pointer; }
 
 li {
   list-style: none; }
+
+@media (min-width: 900px) {
+  h2 {
+    font-size: 26px; } }
 
 header {
   position: relative;
@@ -429,7 +433,7 @@ header {
         font-weight: 400;
         font-size: 18px;
         color: gray;
-        padding: 14px 0; }
+        margin: 14px 0; }
       header main section button {
         color: white;
         font-size: 22px;
@@ -443,7 +447,9 @@ header {
     background-image: url("../images/bg-intro-desktop.svg");
     background-size: 50% auto; }
     header img.logo {
-      width: 12%; }
+      width: 12%;
+      margin-top: 5%;
+      margin-left: 7%; }
     header main {
       height: 100%;
       flex-direction: row-reverse;
@@ -454,13 +460,13 @@ header {
         transform: translateY(-28%);
         padding-right: 10%; }
       header main section {
-        flex-basis: 45%;
+        flex-basis: 40%;
         text-align: left;
-        margin-left: 25px; }
+        margin-left: 7%; }
         header main section h1 {
           font-size: 50px; }
         header main section h2 {
-          padding: 20px 0;
+          margin: 20px 0;
           font-size: 18px; }
         header main section button {
           font-size: 18px;
@@ -475,21 +481,25 @@ nav {
   width: 100%;
   margin-top: 20px;
   padding-right: 10px; }
-  nav ul {
+  nav .menu {
     display: flex;
     justify-content: flex-end;
     padding: 15px; }
-    nav ul li {
+    nav .menu__item {
       padding: 10px 25px;
       margin-left: 4px;
       color: white;
       font-size: 14px; }
+      nav .menu__item--green {
+        background-color: #05D69B; }
+      nav .menu__item--radius {
+        border-radius: 6px; }
 
 @media (min-width: 900px) {
   nav {
     margin-top: 40px;
     padding-right: 30px; }
-    nav ul li {
+    nav .menu__item {
       padding: 5px 25px; } }
 
 .details {
@@ -586,8 +596,7 @@ nav {
           font-size: 24px; }
         .integrations .integration__card__details {
           color: #000;
-          padding: 5px 30px 40px 30px;
-          font-size: 18px; }
+          padding: 5px 30px 30px 30px; }
         .integrations .integration__card--higher {
           position: relative;
           top: -55px; } }
@@ -649,8 +658,6 @@ nav {
         .footer__element--contact form .submit {
           padding: 8px 20%;
           margin: 20px 0;
-          background-color: #05D69B;
-          border-radius: 5px;
           cursor: pointer; }
     .footer__element h2 {
       color: #FAFAFA;

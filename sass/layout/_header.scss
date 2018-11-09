@@ -38,7 +38,7 @@ header {
         font-weight: 400;
         font-size: 18px;
         color: hsl(0, 0%, 50%);
-        padding: 14px 0;
+        margin: 14px 0;
 
       }
       button {
@@ -63,6 +63,8 @@ header {
 
     img.logo {
       width: 12%;
+      margin-top: 5%;
+      margin-left: 7%;
     }
     main {
       height: 100%;
@@ -75,14 +77,14 @@ header {
         padding-right: 10%;
       }
       section {
-        flex-basis: 45%;
+        flex-basis: 40%;
         text-align: left;
-        margin-left: 25px;
+        margin-left: 7%;
         h1 {
           font-size: 50px;
         }
         h2 {
-          padding: 20px 0;
+          margin: 20px 0;
           font-size: 18px;
         }
         button {
