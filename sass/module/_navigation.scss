@@ -9,17 +9,17 @@ nav {
     display: flex;
     justify-content: flex-end;
     padding: 15px;
-     &__item{
+    &__item {
       padding: 10px 25px;
       margin-left: 4px;
       color: white;
       font-size: 14px;
-       &--green{
-         @include green-button;
-       }
-       &--radius{
-         @include button-radius;
-       }
+      &--green {
+        @include green-button;
+      }
+      &--radius {
+        @include button-radius;
+      }
     }
   }
 }

@@ -394,11 +394,15 @@ button {
 li {
   list-style: none; }
 
+a {
+  text-decoration: none;
+  color: #fff; }
+
 @media (min-width: 900px) {
   h2 {
     font-size: 26px; } }
 
-header {
+.firstpage {
   position: relative;
   height: 100vh;
   width: 100vw;
@@ -406,13 +410,13 @@ header {
   background-repeat: no-repeat;
   background-position: top right;
   background-size: 70% auto; }
-  header img.logo {
+  .firstpage__logo {
     position: absolute;
     top: 0;
     left: 0;
     width: 25%;
     margin: 40px 25px; }
-  header main {
+  .firstpage .content {
     width: 100%;
     position: absolute;
     bottom: 0;
@@ -420,58 +424,57 @@ header {
     flex-direction: column;
     align-items: center;
     padding-bottom: 10px; }
-    header main img {
+    .firstpage .content__image {
       width: 70%; }
-    header main section {
+    .firstpage .content__text {
       margin: 0 0 40px 0;
       width: 80%;
       text-align: center;
       padding-top: 0; }
-      header main section h1 {
+      .firstpage .content__text__header {
         font-size: 28px; }
-      header main section h2 {
-        font-weight: 400;
+      .firstpage .content__text__information {
         font-size: 18px;
         color: gray;
         margin: 14px 0; }
-      header main section button {
-        color: white;
-        font-size: 22px;
-        border: none;
-        padding: 10px 40px;
-        font-weight: 600;
-        box-shadow: 0 4px 8px 0 #ddd; }
+  .firstpage__button {
+    color: white;
+    font-size: 22px;
+    border: none;
+    padding: 10px 40px;
+    font-weight: 600;
+    box-shadow: 0 4px 8px 0 #ddd; }
 
 @media (min-width: 900px) {
-  header {
+  .firstpage {
     background-image: url("../images/bg-intro-desktop.svg");
     background-size: 50% auto; }
-    header img.logo {
+    .firstpage__logo {
       width: 12%;
       margin-top: 5%;
       margin-left: 7%; }
-    header main {
+    .firstpage .content {
       height: 100%;
       flex-direction: row-reverse;
       justify-content: space-between; }
-      header main img {
+      .firstpage .content__image {
         width: 35%;
         bottom: 50%;
         transform: translateY(-28%);
         padding-right: 10%; }
-      header main section {
+      .firstpage .content__text {
         flex-basis: 40%;
         text-align: left;
         margin-left: 7%; }
-        header main section h1 {
+        .firstpage .content__text__header {
           font-size: 50px; }
-        header main section h2 {
+        .firstpage .content__text__information {
           margin: 20px 0;
           font-size: 18px; }
-        header main section button {
-          font-size: 18px;
-          padding: 15px 70px;
-          font-weight: 800; }
+    .firstpage__button {
+      font-size: 18px;
+      padding: 15px 70px;
+      font-weight: 800; }
   .greenBtn:hover {
     cursor: pointer; } }
 
