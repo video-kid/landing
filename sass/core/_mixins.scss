@@ -5,3 +5,13 @@
 @mixin button-radius {
   border-radius: 6px;
 }
+
+@mixin vendor-prefix($property, $value) {
+#{'-khtml-'+$property}: $value;
+#{'-moz-'+$property}: $value;
+#{'-o-'+$property}: $value;
+#{'-ms-'+$property}: $value;
+#{'-webkit-'+$property}: $value;
+#{$property}: $value;
+}
+
