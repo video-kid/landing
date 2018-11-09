@@ -374,7 +374,8 @@ th {
   box-sizing: border-box; }
 
 section {
-  padding-top: 200px; }
+  padding-top: 200px;
+  width: 100vw; }
 
 h1, h2 {
   color: #2B2B2B;
@@ -477,6 +478,30 @@ a {
       font-weight: 800; }
   .greenBtn:hover {
     cursor: pointer; } }
+
+body {
+  overflow-x: hidden; }
+  body .weird {
+    position: absolute;
+    height: 140vh;
+    width: 250vw;
+    background-color: #FAFAFA;
+    border-radius: 10%;
+    top: 115%;
+    left: -120%;
+    -khtml-transform: rotate(14deg) skew(-36deg, 8deg);
+    -moz-transform: rotate(14deg) skew(-36deg, 8deg);
+    -o-transform: rotate(14deg) skew(-36deg, 8deg);
+    -ms-transform: rotate(14deg) skew(-36deg, 8deg);
+    -webkit-transform: rotate(14deg) skew(-36deg, 8deg);
+    transform: rotate(14deg) skew(-36deg, 8deg);
+    z-index: -1; }
+
+@media (min-width: 900px) {
+  body .weird {
+    height: 65vh;
+    width: 105vw;
+    top: 95%; } }
 
 nav {
   position: absolute;
@@ -605,9 +630,12 @@ nav {
           top: -55px; } }
 
 .join {
-  margin: 0 10px;
-  text-align: center;
-  margin-bottom: 100px; }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; }
+  .join__details {
+    padding: 0 10px; }
   .join__button {
     color: white;
     font-size: 18px;
@@ -620,8 +648,10 @@ nav {
 @media (min-width: 900px) {
   .join__details {
     margin: 0 auto;
-    width: 40%;
-    padding: 10px; } }
+    width: 45%;
+    padding: 10px; }
+  .join__button {
+    width: 20%; } }
 
 .footer {
   background-color: #070439;

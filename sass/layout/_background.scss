@@ -1,0 +1,24 @@
+body {
+  overflow-x: hidden;
+  .weird{
+    position: absolute;
+    height: 140vh;
+    width: 250vw;
+    background-color: $light-gray;
+    border-radius: 10%;
+    top: 115%;
+    left: -120%;
+    @include vendor-prefix(transform,  rotate(14deg) skew(-36deg, 8deg));
+    z-index: -1;
+  }
+}
+
+@media (min-width: 900px) {
+  body {
+    .weird{
+      height: 65vh;
+      width: 105vw;
+      top: 95%;
+    }
+  }
+}
