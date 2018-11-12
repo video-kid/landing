@@ -4,12 +4,13 @@
 @import 'core/_typography';
 @import 'core/_mixins';
 @import 'core/_globals';
-@import 'layout/_header';
-@import 'layout/_background';
+@import 'core/_background';
+@import 'module/_firstpage';
 @import 'module/_navigation';
-@import 'layout/_section1';
-@import 'layout/_section2';
-@import 'layout/_section3';
+@import 'module/_details';
+@import 'module/_integrations';
+@import 'module/_join';
+@import 'layout/_header';
 @import 'layout/_footer';
 
 

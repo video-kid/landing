@@ -1,6 +1,10 @@
 body {
+  background-image: url("../images/bg-intro-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 70% auto;
   overflow-x: hidden;
-  .weird{
+  .decorator{
     position: absolute;
     height: 140vh;
     width: 250vw;
@@ -15,10 +19,13 @@ body {
 
 @media (min-width: 900px) {
   body {
-    .weird{
+    background-image: url("../images/bg-intro-desktop.svg");
+    background-size: 50% auto;
+    .decorator{
       height: 65vh;
       width: 105vw;
       top: 95%;
+      left: 0;
     }
   }
 }
