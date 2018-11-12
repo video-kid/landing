@@ -21,11 +21,25 @@ p {
   font-size: 16px;
 }
 
-button {
-  @include button-radius;
-  @include green-button;
+.button {
+  display: inline-block;
   cursor: pointer;
+  border-radius: $radius-default;
+  color: white;
+  font-size: 18px;
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+  &--special{
+    background-color: $teal;
+  }
+  &--large{
+    padding: 20px 60px;
+    font-weight: 600;
+    font-size: 22px;
+  }
 }
+
 
 li {
   list-style: none;

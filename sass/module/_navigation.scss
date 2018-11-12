@@ -1,5 +1,4 @@
 nav {
-  position: absolute;
   top: 0;
   width: 100%;
   margin-top: 20px;
@@ -14,12 +13,6 @@ nav {
       margin-left: 4px;
       color: white;
       font-size: 14px;
-      &--green {
-        @include green-button;
-      }
-      &--radius {
-        @include button-radius;
-      }
     }
   }
 }
@@ -30,7 +23,7 @@ nav {
     padding-right: 30px;
     .menu {
       &__item {
-        padding: 5px 25px;
+        padding: 10px 25px;
       }
     }
   }

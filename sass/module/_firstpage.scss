@@ -1,7 +1,5 @@
 .firstpage {
-  position: relative;
-  height: 100vh;
-  width: 100vw;
+  height: 80vh;
   .content {
     width: 100%;
     position: absolute;
@@ -28,14 +26,6 @@
       margin: 14px 0;
     }
   }
-  &__button {
-    color: white;
-    font-size: 22px;
-    border: none;
-    padding: 10px 40px;
-    font-weight: 600;
-    box-shadow: 0 4px 8px 0 #ddd;
-  }
 }
 
 //desktop header:
@@ -43,13 +33,11 @@
 @media (min-width: 900px) {
   .firstpage {
     .content {
-      height: 100%;
       flex-direction: row-reverse;
       justify-content: space-between;
+      bottom: 35%;
       &__image {
         width: 35%;
-        bottom: 50%;
-        transform: translateY(-28%);
         padding-right: 10%;
       }
       &__text {
@@ -64,11 +52,6 @@
         margin: 20px 0;
         font-size: 18px;
       }
-    }
-    &__button {
-      font-size: 18px;
-      padding: 15px 70px;
-      font-weight: 800;
     }
   }
 }
