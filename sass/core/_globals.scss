@@ -5,7 +5,7 @@
 }
 
 section {
-  padding-top: 200px;
+  padding-top: 150px;
   width: 100vw;
 }
 
@@ -40,6 +40,7 @@ p {
   }
 }
 
+
 li {
   list-style: none;
 }
@@ -50,6 +51,9 @@ a {
 }
 
 @media (min-width: 900px) {
+  section {
+    padding-top: 210px;
+  }
   h2 {
     font-size: 26px;
   }

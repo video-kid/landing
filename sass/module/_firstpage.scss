@@ -1,5 +1,6 @@
 .firstpage {
-  height: 80vh;
+  height: 100vh;
+  position: relative;
   .content {
     width: 100%;
     position: absolute;
@@ -32,10 +33,13 @@
 
 @media (min-width: 900px) {
   .firstpage {
+    height: 70vh;
     .content {
+      position: absolute;
       flex-direction: row-reverse;
       justify-content: space-between;
-      bottom: 35%;
+      bottom: 50%;
+      transform: translateY(65%);
       &__image {
         width: 35%;
         padding-right: 10%;

@@ -374,7 +374,7 @@ th {
   box-sizing: border-box; }
 
 section {
-  padding-top: 200px;
+  padding-top: 150px;
   width: 100vw; }
 
 h1, h2 {
@@ -410,11 +410,13 @@ a {
   color: #fff; }
 
 @media (min-width: 900px) {
+  section {
+    padding-top: 210px; }
   h2 {
     font-size: 26px; } }
 
 body {
-  max-width: 100vw;
+  position: relative;
   background-image: url("../images/bg-intro-mobile.svg");
   background-repeat: no-repeat;
   background-position: top right;
@@ -426,7 +428,7 @@ body {
     width: 250vw;
     background-color: #FAFAFA;
     border-radius: 10%;
-    top: 115%;
+    top: 40%;
     left: -120%;
     -moz-transform: rotate(14deg) skew(-36deg, 8deg);
     -o-transform: rotate(14deg) skew(-36deg, 8deg);
@@ -442,11 +444,12 @@ body {
     body .decorator {
       height: 65vh;
       width: 105vw;
-      top: 95%;
+      top: 25%;
       left: 0; } }
 
 .firstpage {
-  height: 80vh; }
+  height: 100vh;
+  position: relative; }
   .firstpage .content {
     width: 100%;
     position: absolute;
@@ -470,24 +473,29 @@ body {
       margin: 14px 0; }
 
 @media (min-width: 900px) {
-  .firstpage .content {
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    bottom: 35%; }
-    .firstpage .content__image {
-      width: 35%;
-      padding-right: 10%; }
-    .firstpage .content__text {
-      flex-basis: 40%;
-      text-align: left;
-      margin-left: 7%; }
-    .firstpage .content__header {
-      font-size: 50px; }
-    .firstpage .content__information {
-      margin: 20px 0;
-      font-size: 18px; } }
+  .firstpage {
+    height: 70vh; }
+    .firstpage .content {
+      position: absolute;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      bottom: 50%;
+      transform: translateY(65%); }
+      .firstpage .content__image {
+        width: 35%;
+        padding-right: 10%; }
+      .firstpage .content__text {
+        flex-basis: 40%;
+        text-align: left;
+        margin-left: 7%; }
+      .firstpage .content__header {
+        font-size: 50px; }
+      .firstpage .content__information {
+        margin: 20px 0;
+        font-size: 18px; } }
 
 nav {
+  position: absolute;
   top: 0;
   width: 100%;
   margin-top: 20px;
