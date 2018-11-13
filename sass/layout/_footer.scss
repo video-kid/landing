@@ -3,7 +3,7 @@
   color: $light-gray;
   display: flex;
   flex-direction: column;
-  padding: 70px 0px;
+  padding: 70px 0;
   width: 100%;
   .fylo-logo {
     width: 50%;
@@ -15,7 +15,7 @@
     &--contact {
       display: flex;
       flex-direction: column;
-        span {
+        div {
           padding: 10px 0;
           display: block;
           img {
@@ -74,15 +74,12 @@
       width: 45%;
     }
     &__element {
-      padding: 40px inherit;
+      padding: 40px;
       &--contact {
         flex-basis: 35%;
-          span {
+          div {
             padding: 5px 0;
           }
-
-        p {
-        }
         form {
           margin-bottom: 10px;
           flex-direction: row;

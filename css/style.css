@@ -414,6 +414,7 @@ a {
     font-size: 26px; } }
 
 body {
+  max-width: 100vw;
   background-image: url("../images/bg-intro-mobile.svg");
   background-repeat: no-repeat;
   background-position: top right;
@@ -457,7 +458,7 @@ body {
     .firstpage .content__image {
       width: 70%; }
     .firstpage .content__text {
-      margin: 0 0 40px 0;
+      margin: 0 0 40px;
       width: 80%;
       text-align: center;
       padding-top: 0; }
@@ -556,7 +557,7 @@ nav {
     .integrations .integration__card {
       background-color: #fff;
       border-radius: 5px;
-      box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
       width: 60%;
       margin-top: 30px;
       display: flex;
@@ -573,8 +574,7 @@ nav {
       border-top: 2px solid rgba(0, 0, 0, 0.1);
       font-family: 'Raleway', sans-serif; }
     .integrations .integration__details {
-      padding: 5px;
-      padding-bottom: 20px;
+      padding: 5px 5px 20px;
       font-size: 14px; }
 
 @media (min-width: 900px) {
@@ -645,7 +645,7 @@ nav {
   color: #FAFAFA;
   display: flex;
   flex-direction: column;
-  padding: 70px 0px;
+  padding: 70px 0;
   width: 100%; }
   .footer .fylo-logo {
     width: 50%; }
@@ -654,13 +654,13 @@ nav {
     .footer__element--contact {
       display: flex;
       flex-direction: column; }
-      .footer__element--contact span {
+      .footer__element--contact div {
         padding: 10px 0;
         display: block; }
-        .footer__element--contact span img {
+        .footer__element--contact div img {
           display: inline;
           padding-right: 10px; }
-        .footer__element--contact span p {
+        .footer__element--contact div p {
           display: inline; }
       .footer__element--contact p {
         margin: 20px 0;
@@ -693,10 +693,10 @@ nav {
     .footer .fylo-logo {
       width: 45%; }
     .footer__element {
-      padding: 40px inherit; }
+      padding: 40px; }
       .footer__element--contact {
         flex-basis: 35%; }
-        .footer__element--contact span {
+        .footer__element--contact div {
           padding: 5px 0; }
         .footer__element--contact form {
           margin-bottom: 10px;
