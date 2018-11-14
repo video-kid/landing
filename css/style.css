@@ -373,6 +373,9 @@ th {
   padding: 0;
   box-sizing: border-box; }
 
+html {
+  overflow-x: hidden; }
+
 section {
   padding-top: 150px;
   width: 100vw; }
