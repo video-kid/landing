@@ -1,4 +1,4 @@
-
+// section3
 .join {
   display: flex;
   flex-direction: column;
@@ -13,10 +13,9 @@
   }
 }
 
-//section3 desktop:
+// section3 desktop:
 @media (min-width: $breakpoint) {
   .join {
-    &__slogan{}
     &__details {
       margin: 0 auto;
       width: 45%;
