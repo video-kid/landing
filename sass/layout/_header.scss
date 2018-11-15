@@ -9,7 +9,7 @@
   }
 }
 
-@media (min-width: 900px) {
+@media (min-width: $breakpoint) {
   .logo {
     margin-top: 5%;
     margin-left: 7%;

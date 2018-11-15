@@ -18,7 +18,7 @@ body {
   }
 }
 
-@media (min-width: 900px) {
+@media (min-width: $breakpoint) {
   body {
     background-image: url("../images/bg-intro-desktop.svg");
     background-size: 50% auto;

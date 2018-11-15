@@ -14,7 +14,7 @@
 }
 
 //section3 desktop:
-@media (min-width: 900px) {
+@media (min-width: $breakpoint) {
   .join {
     &__slogan{}
     &__details {

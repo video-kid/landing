@@ -51,7 +51,7 @@
 
 //section 2 desktop:
 
-@media (min-width: 900px) {
+@media (min-width: $breakpoint) {
   .integrations {
     flex-direction: row;
     align-items: center;

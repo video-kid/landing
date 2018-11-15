@@ -18,7 +18,7 @@ nav {
   }
 }
 
-@media (min-width: 900px) {
+@media (min-width: $breakpoint) {
   nav {
     margin-top: 40px;
     padding-right: 30px;

@@ -24,7 +24,7 @@
   }
 }
 
-@media (min-width: 900px) {
+@media (min-width: $breakpoint) {
   .details {
     &__slogan {
       margin-bottom: 20px;
@@ -40,7 +40,6 @@
           font-size: 14px;
         }
       }
-
     }
   }
 }
